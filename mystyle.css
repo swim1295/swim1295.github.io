@@ -5,7 +5,10 @@
 
 #title1 {
     font-family: 'Karma', serif;
-}
+    max-width: 1000px;
+    margin: auto;
+    padding: 5px;
+    }
 
 #content1 {
     font-family: 'Karma', serif;
