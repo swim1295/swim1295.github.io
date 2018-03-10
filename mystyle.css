@@ -1,0 +1,26 @@
+
+@import url('https://fonts.googleapis.com/css?family=Karma');
+@import url('https://fonts.googleapis.com/css?family=Karma|Lobster+Two');
+@import url('https://fonts.googleapis.com/css?family=Karma|Patua+One|Questrial');
+
+#title1 {
+    font-family: 'Karma', serif;
+    color:rgba(18, 24, 102, 0.63);
+}
+
+#content1 {
+    font-family: 'Karma', serif;
+}
+
+#song1 {
+    font-family: 'Questrial', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background-color: lightblue;
+}
+
