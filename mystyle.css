@@ -5,7 +5,7 @@
 
 #title1 {
     font-family: 'Karma', serif;
-    color:rgba(18, 24, 102, 0.63);
+    color:rgb(9, 9, 146);
 }
 
 #content1 {
@@ -21,6 +21,6 @@ img {
 }
 
 body {
-    background-color: lightblue;
+    background-color: rgb(210, 232, 240);
 }
 
