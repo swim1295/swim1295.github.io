@@ -30,3 +30,19 @@ body {
 a {
     color:red;
 }
+
+@media only screen and (max-width: 480px) {
+    body {
+        background-color:skyblue;
+        margin:10px;
+    }
+
+    #title1 {
+        background-color: rgb(151, 149, 149)
+    }
+
+    #content1 {
+        background-color: rgb(151, 149, 149)
+    }
+
+}
