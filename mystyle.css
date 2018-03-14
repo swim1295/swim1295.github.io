@@ -36,7 +36,10 @@ a {
         background-color:skyblue;
         margin:10px;
     }
-
+    
+    img {
+        background-color: rgb(151, 149, 149)
+    }
     #title1 {
         background-color: rgb(151, 149, 149)
     }
@@ -46,3 +49,4 @@ a {
     }
 
 }
+
