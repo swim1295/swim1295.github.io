@@ -21,8 +21,12 @@
 
 img {
     max-width: 100%;
+    height: auto;
 }
 
+.membername {
+    color: teal;
+}
 body {
     background-color: rgb(210, 232, 240);
 }
