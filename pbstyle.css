@@ -1,0 +1,53 @@
+
+
+#ln {
+    border: 1px solid black;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+#fn {
+    border: 1px solid black;
+    margin-left: 48px;
+    margin-bottom: 10px;
+}
+
+#pn {
+    border: 1px solid black;
+    margin-left: 16px;
+    margin-bottom: 10px;
+}
+
+#savebtn {
+    border-radius: 4px ;
+    padding-left: 30px; 
+    padding-right: 30px;
+    background-color:rgb(219, 219, 219);
+    border:1px solid black;
+    margin-left: 205px;
+    margin-bottom: 20px;
+}  
+
+talbe {
+    width: 100px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th {
+    width: 160px;
+    background-color: rgb(219, 219, 219);
+}
+
+#td4 {
+    width: 60px;
+}
+
+#th1, #th2 {
+    width: 130px;
+}
+

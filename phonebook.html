@@ -1,0 +1,51 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Phonebook</title>
+    <link rel="stylesheet" type="text/css" href="pbstyle.css" />
+</head>
+<body>
+
+<h1>
+    Phone Book
+</h1>
+
+<div id="main">
+    Last Name<span><input id="ln" type="text" 
+        value="Last Name" onfocus="this.value=''" 
+        onblur="if(this.value =='') this.value='Last Name';"/><br/></span>
+    First Name<span><input id="fn" type="text" 
+        value="First Name" onfocus="this.value=''"
+        onblur="if(this.value =='') this.value='First Name';"/><br/></span>
+    Phone Number<span><input id="pn" type="text" 
+        value="Phone Number" onfocus="this.value=''"
+        onblur="if(this.value =='') this.value='Phone Number';"/><br/></span>
+</div>
+
+<div>
+    <input id="savebtn" type="button" value="Save"/>
+</div>
+
+<table id="table">
+<tr id="concept" >
+    <th id="th1">▼ Last Name</th>
+    <th id="th2">▼ First Name</th>
+    <th id="th3" colspan="2">▼ Phone Number</th> <!--colspan 셀 가로병합-->
+</tr id="contents">
+<td id="td1"></td>
+<td id="td2"></td>
+<td id="td3" ></td>
+<td id="td4"></td>
+<tr>
+
+</tr>
+</table>
+</body>
+
+<script src="pbjs.js">
+
+</script>
+</html>
