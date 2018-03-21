@@ -13,7 +13,6 @@
     Phone Book
 </h1>
 
-<form id="form">
 <div id="main">
     Last Name<span><input id="ln" type="text" 
         value="Last Name" onfocus="this.value=''" 
@@ -25,26 +24,21 @@
         value="Phone Number" onfocus="this.value=''"
         onblur="if(this.value =='') this.value='Phone Number';"/><br/></span>
 </div>
-</form>
 
-<div>
-    <button id="savebtn" value="Save">Save</button>
-</div>
 
-<table id="table">
-<tr id="concept" >
-    <th id="th1">▼ Last Name</th>
-    <th id="th2">▼ First Name</th>
-    <th id="th3" colspan="2">▼ Phone Number
-    </tr> <!--colspan 셀 가로병합-->
-</tr id="content">
-<td id="td1"></td>
-<td id="td2"></td>
-<td id="td3" ></td>
-<td id="td4"></td>
-<tr>
+
+<button id="savebtn" onclick="add_row()">Save</button>
+
+<hr>
+<table>
+  <thead>
+    <th>▼ Last Name</th>
+    <th>▼ First Name</th>
+    <th colspan="2">▼ Phone Number</th>
+    
+  </thead>
+  <tbody id="my-tbody"></tbody>
 </table>
-</body>
 
 <script src="pbjs.js">
 

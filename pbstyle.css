@@ -51,3 +51,8 @@ th {
     width: 130px;
 }
 
+#Del {
+    border: 1px solid white;
+    background-color:white;
+    margin-right: 25px;
+}

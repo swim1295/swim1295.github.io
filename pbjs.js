@@ -1,20 +1,23 @@
-document.getElementById('savebtn').onclick = function() {
-    add_row();
-}
-
-
 function add_row() {
-table = document.getElementById("table");
-tr = document.createElement('tr');
-td1 = document.getElementById("td1");
-td2 = document.getElementById("td2");
-td3 = document.getElementById("td3");
-td1.innerText = document.getElementById('ln').value;
-td2.innerText = document.getElementById('fn').value;
-td3.innerText = document.getElementById('pn').value;
-tr.appendChild(td1);
-tr.appendChild(td2);
-tr.appendChild(td3);
-tr.appendChild(td4);
-table.appendChild(tr);
-}
+    var my_tbody = document.getElementById('my-tbody');
+    var row = my_tbody.insertRow( my_tbody.rows.length );
+    var objInputButton = document.createElement("input");
+    objInputButton.setAttribute("type", "button");
+    objInputButton.setAttribute("value", "Del");
+    objInputButton.setAttribute("onclick", "delete_row();");
+    objInputButton.setAttribute("id","Del");
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+    var cell3 = row.insertCell(2);
+    var cell4 = row.insertCell(3);
+    cell1.innerHTML = document.getElementById('ln').value;
+    cell2.innerHTML = document.getElementById('fn').value;
+    cell3.innerHTML = document.getElementById('pn').value;
+    cell4.appendChild(objInputButton);
+  }
+
+  function delete_row() {
+    var my_tbody = document.getElementById('my-tbody');
+    if (my_tbody.rows.length < 1) return;
+    my_tbody.deleteRow( my_tbody.rows.length-1 );
+  }
