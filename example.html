@@ -1,0 +1,65 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <style>  
+        table { border-collapse:collapse; }  
+        th, td { border:1px solid gray; }
+        </style>
+        
+        <div id="main">
+            Last Name<span><input id="ln" type="text" 
+                value="Last Name" onfocus="this.value=''" 
+                onblur="if(this.value =='') this.value='Last Name';"/><br/></span>
+            First Name<span><input id="fn" type="text" 
+                value="First Name" onfocus="this.value=''"
+                onblur="if(this.value =='') this.value='First Name';"/><br/></span>
+            Phone Number<span><input id="pn" type="text" 
+                value="Phone Number" onfocus="this.value=''"
+                onblur="if(this.value =='') this.value='Phone Number';"/><br/></span>
+        </div>
+        
+       
+       
+        <button onclick="add_row()">save</button>
+        <button id="Del" onclick="delete_row()">행 삭제하기</button>
+        <hr>
+        <table>
+          <thead>
+            <th>Last Name</th>
+            <th>First Name</th>
+            <th colspan="2">Phone Number</th>
+            
+          </thead>
+          <tbody id="my-tbody"></tbody>
+        </table>
+        
+        <script>
+          function add_row() {
+            var my_tbody = document.getElementById('my-tbody');
+            // var row = my_tbody.insertRow(0); // 상단에 추가
+            var row = my_tbody.insertRow( my_tbody.rows.length ); // 하단에 추가
+            var cell1 = row.insertCell(0);
+            var cell2 = row.insertCell(1);
+            var cell3 = row.insertCell(2);
+            var cell4 = row.insertCell(3);
+            cell1.innerHTML = document.getElementById('ln').value;
+            cell2.innerHTML = document.getElementById('fn').value;
+            cell3.innerHTML = document.getElementById('pn').value;
+            cell4.innerHTML = document.getElementById('Del');
+          }
+        
+          function delete_row() {
+            var my_tbody = document.getElementById('my-tbody');
+            if (my_tbody.rows.length < 1) return;
+            // my_tbody.deleteRow(0); // 상단부터 삭제
+            my_tbody.deleteRow( my_tbody.rows.length-1 ); // 하단부터 삭제
+          }
+        </script>
+</body>
+</html>
