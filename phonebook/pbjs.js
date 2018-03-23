@@ -21,3 +21,8 @@ function add_row() {
     if (my_tbody.rows.length < 1) return;
     my_tbody.deleteRow( my_tbody.rows.length-1 );
   }
+
+  document.getElementById('savebtn').onclick = function() {
+    add_row();
+  }
+  

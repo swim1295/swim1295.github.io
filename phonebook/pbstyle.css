@@ -14,7 +14,7 @@
 
 #pn {
     border: 1px solid black;
-    margin-left: 16px;
+    margin-left: 23px;
     margin-bottom: 10px;
 }
 
@@ -24,7 +24,7 @@
     padding-right: 30px;
     background-color:rgb(219, 219, 219);
     border:1px solid black;
-    margin-left: 205px;
+    margin-left: 178px;
     margin-bottom: 20px;
 }  
 
@@ -54,5 +54,6 @@ th {
 #Del {
     border: 1px solid white;
     background-color:white;
-    margin-right: 25px;
+    margin-right: 23px;
+    padding-right: 22px;
 }
