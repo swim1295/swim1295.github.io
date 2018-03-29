@@ -4,7 +4,7 @@ function add_row() {
     var objInputButton = document.createElement("input");
     objInputButton.setAttribute("type", "button");
     objInputButton.setAttribute("value", "Del");
-    objInputButton.setAttribute("onclick", "delete_row();");
+    objInputButton.setAttribute("onclick", "delRow(this);");
     objInputButton.setAttribute("id","Del");
     var cell1 = row.insertCell(0);
     var cell2 = row.insertCell(1);
@@ -16,10 +16,9 @@ function add_row() {
     cell4.appendChild(objInputButton);
   }
 
-  function delete_row() {
-    var my_tbody = document.getElementById('my-tbody');
-    if (my_tbody.rows.length < 1) return;
-    my_tbody.deleteRow( my_tbody.rows.length-1 );
+  function delRow(d){ 
+    var i=d.parentNode.parentNode.rowIndex;
+    document.getElementById('my-tbody').deleteRow(i-1);
   }
 
   document.getElementById('savebtn').onclick = function() {

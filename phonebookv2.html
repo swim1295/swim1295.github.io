@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Phonebook</title>
-    <link rel="stylesheet" type="text/css" href="pbstyle.css" />
+    <link rel="stylesheet" type="text/css" href="pbv2.css" />
 </head>
 <body>
     <div id="main">
@@ -26,19 +26,24 @@
 
 
 
+<div>
+    &nbsp;<input id="searchTxt" type="text" placeholder="Last Name"/>
+    <input id="searchBtn" type="button" value="Search"/>
+</div>
+
 
 <hr>
 <table>
   <thead>
-    <th>▼ Last Name</th>
-    <th>▼ First Name</th>
-    <th colspan="2">▼ Phone Number</th>
+    <th><input id="lnbtn" type="button" value="▼ Last Name" onclick="lnSort()" title="sortBtn" /></th>
+    <th><input id="fnbtn" type="button" value="▼ First Name" onclick="fnSort()" title="sortBtn"/></th>
+    <th colspan="2"><input id="pnbtn" type="button" value="▼ Phone Number" onclick="pnSort()" title="sortBtn"/></th>
     
   </thead>
   <tbody id="my-tbody"></tbody>
 </table>
 </div>
-<script src="pbjs.js">
+<script src="pbv2.js">
 
 </script>
 

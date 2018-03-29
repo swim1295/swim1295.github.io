@@ -1,4 +1,6 @@
-
+body {
+    margin: 0;
+}
 
 #ln {
     border: 1px solid black;
@@ -16,7 +18,7 @@
     border: 1px solid black;
     margin-left: 16px;
     margin-bottom: 10px;
-}   
+}
 
 #savebtn {
     border-radius: 4px ;
@@ -54,8 +56,25 @@ th {
 #Del {
     border: 1px solid white;
     background-color:white;
-    margin-right: 23px;
-    padding-right: 22px;
+}
+
+#lnbtn {
+    padding-left: 37px;
+    padding-right: 37px;
+}
+
+#fnbtn {
+    padding-left: 37px;
+    padding-right: 37px;
+}
+
+#pnbtn {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+body {
+    margin: 0;
 }
 
 #main {
