@@ -90,6 +90,21 @@ function newTable() {
   cell4.innerHTML = "<input id='Del' value='Del' type='button' onclick='delRow(this)'/>";
 }
 
+//본 테이블 값 재생성
+function backUp() {
+  for(j=0; j<pb.length; j++){
+  var my_tbody = document.getElementById('my-tbody');
+  var row = my_tbody.insertRow( my_tbody.rows.length );
+  var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1);
+  var cell3 = row.insertCell(2);
+  var cell4 = row.insertCell(3);
+  cell1.innerHTML = pb[j].lastName;
+  cell2.innerHTML = pb[j].firstName;
+  cell3.innerHTML = pb[j].phoneNumber;
+  cell4.innerHTML = "<input id='Del' value='Del' type='button' onclick='delRow(this)'/>";
+  }
+}
 
 // search 버튼을 누르면 searchTxt 안에 있는 값을 불러오고
 // 순환문을 통해 그 값에 맞는 배열 속 last Name을 찾아내어
@@ -132,9 +147,10 @@ function lnSort() {
   for(i=0; i<lnArr.length; i++) {
     
     for(j=0; j<lnArr.length; j++) {
-
       if(lnArr[i] == pb[j].lastName) {
-       newTable();
+        if(pb[j].lastName == ""){alert("빈 칸이 포함되었습니다.");
+        backUp(); return;}
+        newTable();
       }
     }
   }
@@ -148,9 +164,10 @@ function fnSort() {
   for(i=0; i<fnArr.length; i++) {
     
     for(j=0; j<fnArr.length; j++) {
-
       if(fnArr[i] == pb[j].firstName) {
-       newTable();
+        if(pb[j].firstName == ""){alert("빈 칸이 포함되었습니다.");
+        backUp(); return;}
+        newTable();
       }
     }
   }
@@ -164,7 +181,8 @@ function pnSort() {
   for(i=0; i<pnArr.length; i++) {
     
     for(j=0; j<pnArr.length; j++) {
-
+      if(pb[j].phoneNumber == ""){alert("빈 칸이 포함되었습니다.");
+       backUp(); return;}
       if(pnArr[i] == pb[j].phoneNumber) {
        newTable();
       }
