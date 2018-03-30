@@ -140,7 +140,7 @@ function lnSort() {
   }
 }
 
-// 각 객체별(lastName)로 새로운 배열을 추가하여 그에 맞는 값을 반복비교하여 테이블 재 작성
+// 각 객체별(firstName)로 새로운 배열을 추가하여 그에 맞는 값을 반복비교하여 테이블 재 작성
 function fnSort() {
   fnArr.sort();
   tableDel();
@@ -156,6 +156,7 @@ function fnSort() {
   }
 }
 
+// 각 객체별(phoneNumber)로 새로운 배열을 추가하여 그에 맞는 값을 반복비교하여 테이블 재 작성
 function pnSort() {
   pnArr.sort();
   tableDel();
