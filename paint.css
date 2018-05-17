@@ -1,0 +1,35 @@
+#main {
+    margin: auto;
+    max-width: 580px;
+    min-height: 200px;
+    border: 2px solid #ddd;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 5%;
+}
+
+body{
+    margin:20px;
+   }
+   canvas{
+    cursor:crosshair;
+    border:solid 2px #000;
+    margin:15px 0 0 0;
+     -webkit-box-shadow:1px 1px 20px #ccc;
+     -moz-box-shadow:1px 1px 20px #ccc;
+    box-shadow:1px 1px 20px #ccc;
+   }
+   input {
+    border:1px solid #000;
+   }
+  
+   .colorBox {
+       margin-left:8%;
+   }
+
+   .px {
+       margin-left: 8%;
+   }
+   .colorBtn{
+       border-radius: 50%;
+   }

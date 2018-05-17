@@ -1,0 +1,47 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <title>kyungmin</title>
+ <link rel="stylesheet" href="paint.css">
+</head>
+<body id="main" onload="ready()">
+
+ 
+ <canvas id="canvas" width="575" height="400"></canvas>
+
+ <div class="colorBox">
+    <input type="button" class="colorBtn" style="background-color: red; width:40px;height:40px;" onclick="red()"></input>
+    <input type="button" class="colorBtn" style="background-color: orange; width:40px;height:40px;" onclick="orange()"></input>
+    <input type="button" class="colorBtn" style="background-color: yellow; width:40px;height:40px;" onclick="yellow()"></input>
+    <input type="button" class="colorBtn" style="background-color: green;width:40px;height:40px;" onclick="green()"></input>
+    <input type="button" class="colorBtn" style="background-color: blue; width:40px;height:40px;"onclick="blue()"></input>
+    <input type="button" class="colorBtn" style="background-color: navy; width:40px;height:40px;"onclick="navy()"></input>
+    <input type="button" class="colorBtn" style="background-color: purple; width:40px;height:40px;" onclick="purple()"></input>
+    <input type="button" class="colorBtn" style="background-color: brown; width:40px;height:40px;" onclick="brown()"></input>
+    <input type="button" class="colorBtn" style="background-color: pink; width:40px;height:40px;"onclick="pink()"></input>
+    <input type="button" class="colorBtn" style="background-color: gray; width:40px;height:40px;"onclick="gray()"></input>
+    <input type="button" class="colorBtn" style="background-color: black;width:40px;height:40px;" onclick="black()"></input>
+  </div>
+  <div>
+
+  </div>
+
+  <div class="px">
+  
+    <input type="button" value="0.1px" onclick="w1()"></input>
+    <input type="button" value="5px" onclick="w5()"></input>
+    <input type="button" value="15px" onclick="w15()"></input>
+    <input type="button" value="20px" onclick="w20()"></input>
+    <input type="button" value="30px" onclick="w30()"></input> <br /><br />
+  
+    <img src="images/reset.png" title="Reset" width="40px"
+                height="40px" onclick="erase()">
+    <img src="images/eraser.png" title="Eraser" width="40px"
+            height="40px" onclick="white()"></input> <br /><br />
+   </div>
+</body>
+</html>
+<script src="paint.js"></script>
+
