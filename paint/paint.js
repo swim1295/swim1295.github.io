@@ -28,37 +28,37 @@ var w30 = function(){
    }
 
 
-var red = function(){
- ctx.strokeStyle = '#ff0000';
+var A = function(){
+ ctx.strokeStyle = '#93DAFF';
 }
-var orange = function(){
-    ctx.strokeStyle = '#ff7f00';
+var B = function(){
+    ctx.strokeStyle = '#ACF3FF';
    }
-var yellow = function(){
-    ctx.strokeStyle = '#ffff00';
+var C = function(){
+    ctx.strokeStyle = '#C3E7FA';
    }
-var green = function(){
-    ctx.strokeStyle = '#008000';
+var D = function(){
+    ctx.strokeStyle = '#00BFFF';
    }
-var blue = function(){
-    ctx.strokeStyle = '#0000ff';
+var E = function(){
+    ctx.strokeStyle = '#32F1FF';
    }
-var navy = function(){
-    ctx.strokeStyle = '#000080';
+var F = function(){
+    ctx.strokeStyle = '#00D7FF';
    }
-var purple = function(){
-    ctx.strokeStyle = '#800080';
+var G = function(){
+    ctx.strokeStyle = '#96A5FF';
    }
-var brown = function(){
-    ctx.strokeStyle = '#835c3b';
+var H = function(){
+    ctx.strokeStyle = '#86A5FF';
    }
-var pink = function(){
-    ctx.strokeStyle = '#e45e9d';
+var I = function(){
+    ctx.strokeStyle = '#FF46C5';
    }
-var gray = function(){
+var J = function(){
     ctx.strokeStyle = '#808080';
    }
-var black = function(){
+var K = function(){
     ctx.strokeStyle = '#000000';
    }
 var white = function(){
