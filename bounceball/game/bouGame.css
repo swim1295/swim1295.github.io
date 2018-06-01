@@ -1,0 +1,25 @@
+body{
+    background-color:#fff;
+    float:center;
+    }
+     
+    .move {
+        margin-left: 33%;
+    }
+
+    .dev {
+        margin-left: 57%;
+    }
+
+    #myCanvas
+    {
+        display: block;
+        margin: 0 auto;
+        margin-top:50px;
+        background-image: url("http://www.daedobrick.com/fileUPload/goods/3st9.PNG");
+        /*background-color:#2A2927;*/
+        border-radius: 10px;
+        border-bottom:35px solid #C2AA83;
+        padding-top:25px;
+        border:5px dashed gray;
+    }
