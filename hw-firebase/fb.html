@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <style>
+        #main{
+            width:600px;
+            min-height:500px;
+            margin:auto;
+            border:2px solid #aaa;
+            padding:5px;
+        }
+        input{
+            padding:5px;
+            font-size:1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+            <a href="https://swim1295.github.io/hw-firebase/index.html"target="_blank">Customers</a>
+            <a href="https://swim1295.github.io/hw-firebase/fb2.html"target="_blank">Employees</a>
+            <a href="https://swim1295.github.io/hw-firebase/index.html"target="_blank">Home</a><br />
+    <h1>Customers</h1>
+       ID<br/>         <input type="text"  id="id"><br/>
+       FIRST NAME<br/> <input type="text"  id="firstname"><br/>
+       LAST NAME<br/>  <input type="text"  id="lastname"><br/>
+       BIRTH DAY <br/> <input type="text"  id="birthday" value="1990-05-22"><br/>
+       <button id="button_save">Save</button>
+
+       <h3>Customers</h3>
+    <table id="list" width="100%" border="1"> 
+        <tr><th>ID</th> <th>Firstname</th> <th>Lastname</th> <th>Birthday</th> <th>Age</th> <th>Actions</th> </tr>
+
+
+       
+
+
+    </table>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <script src="hw10.jss"></script>
+</body>
+</html>
