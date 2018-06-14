@@ -1,0 +1,44 @@
+#main {
+    margin: auto;
+    max-width: 500px;
+    min-height: 600px;
+    border: 2px dotted gray;
+    padding: 20px;
+    margin-top: 3%;
+      }
+
+#animate {
+    border:1px solid #ddd;
+    width: 450px;
+    height: 200px;
+    margin:auto;
+}
+
+#iFrame {
+    border:1px solid #ddd;
+    margin: 20px;
+    width:450px;
+    height: 350px;
+    display: block;
+}
+
+.siteList{
+    border:1px solid black;
+    margin-left: 10px;
+    margin-top: 10px;
+    float:left;
+    
+}
+
+.site {
+    border:1px solid #ddd;
+    float:right;
+}
+
+#leftFrame {
+    float:left;
+}
+
+#rightFrame {
+    float:right;
+}
