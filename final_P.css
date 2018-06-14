@@ -1,25 +1,17 @@
+
 #main {
     margin: auto;
-    max-width: 500px;
-    min-height: 600px;
+    max-width: 1000px;
+    min-height: 900px;
     border: 2px dotted gray;
     padding: 20px;
     margin-top: 3%;
       }
 
-#animate {
-    border:1px solid #ddd;
-    width: 450px;
-    height: 200px;
-    margin:auto;
-}
-
 #iFrame {
-    border:1px solid #ddd;
+
     margin: 20px;
-    width:450px;
-    height: 350px;
-    display: block;
+
 }
 
 .siteList{
@@ -41,4 +33,24 @@
 
 #rightFrame {
     float:right;
+}
+
+.but {
+    border:1px solid white;
+    background-color: rgb(48, 48, 223);
+    border-radius: 13px;
+    width: 200px;
+    height: 30px;
+}
+
+a {
+    text-decoration: none;
+    color:white;
+    font-size: 15px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#info {
+    color:gray;
 }
